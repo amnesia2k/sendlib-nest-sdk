@@ -24,7 +24,13 @@
     "dist",
     "README.md",
     "LICENSE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "SENDLIB_NEST_SDK_EXAMPLES.md",
+    "CONTRACT.md",
+    "CONTRIBUTING.md",
+    "RELEASING.md",
+    "SECURITY.md",
+    "SUPPORT.md"
   ],
   "scripts": {
     "clean": "node ./scripts/clean.mjs",
@@ -47,8 +53,11 @@
     "smoke:package": "bun run build && node ./scripts/package-smoke.mjs --matrix latest",
     "changeset": "changeset",
     "changeset:status": "changeset status",
+    "version:packages": "changeset version && node ./scripts/date-changelog.mjs && bun install",
+    "security:scan": "node ./scripts/security-scan.mjs",
     "ci": "bun run format:check && bun run build && bun run lint && bun run typecheck && bun run typecheck:examples && bun run check:examples && bun run test:coverage && bun run check:exports && bun run pack:check",
-    "prepublishOnly": "bun run ci"
+    "prepublishOnly": "bun run ci && bun run security:scan && bun run test:compatibility",
+    "release:publish": "node ./scripts/release-tag.mjs"
   },
   "keywords": [
     "sendlib",
@@ -78,13 +87,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amnesia2k/sendlib-sdk.git",
-    "directory": "sendlib-nest-sdk"
+    "url": "git+https://github.com/amnesia2k/sendlib-nest-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/amnesia2k/sendlib-sdk/issues"
+    "url": "https://github.com/amnesia2k/sendlib-nest-sdk/issues"
   },
-  "homepage": "https://github.com/amnesia2k/sendlib-sdk#readme",
+  "homepage": "https://github.com/amnesia2k/sendlib-nest-sdk#readme",
   "engines": {
     "node": ">=22"
   },

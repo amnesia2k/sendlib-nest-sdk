@@ -4,6 +4,8 @@ This changelog records user-visible changes. Versions follow [Semantic Versionin
 
 ## Unreleased
 
+## 0.1.0 — 2026-09-16
+
 - Initialize package identity, dependency policy, licensing, formatting, Changesets, and project
   documentation.
 - Add the strict TypeScript, ESLint, Vitest, SWC, and tsup foundation with dual ESM/CommonJS builds

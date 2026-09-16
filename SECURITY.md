@@ -8,7 +8,9 @@ Before the first npm publication, security fixes are made on the default branch.
 
 Do not open a public issue for a suspected vulnerability.
 
-Use GitHub private vulnerability reporting for the repository or email `tilewa.olatoyee@gmail.com` with the subject `@sendlib/nest-sdk security report`.
+Until GitHub private vulnerability reporting is enabled, email `tilewa.olatoyee@gmail.com` with the
+subject `@sendlib/nest-sdk security report`. After it is enabled, the repository's private
+**Report a vulnerability** form is the preferred route.
 
 Include the affected version, impact, reproduction steps, and a minimal sanitized proof of concept. Never include a real API key, authorization header, recipient, production message, or sensitive attachment. Revoke exposed credentials immediately.
 
