@@ -4,6 +4,13 @@ This changelog records user-visible changes. Versions follow [Semantic Versionin
 
 ## Unreleased
 
+## 0.1.1 — 2026-09-16
+
+### Patch Changes
+
+- [#1](https://github.com/amnesia2k/sendlib-nest-sdk/pull/1) [`32ecae5`](https://github.com/amnesia2k/sendlib-nest-sdk/commit/32ecae5fbfc280093af9d8b9891d696b36a0daca) Thanks [@amnesia2k](https://github.com/amnesia2k)! - Expand the README into a self-contained implementation guide with complete NestJS setup, email,
+  template, attachment, batch, error, cancellation, deliverability, testing, and migration examples.
+
 ## 0.1.0 — 2026-09-16
 
 - Initialize package identity, dependency policy, licensing, formatting, Changesets, and project
