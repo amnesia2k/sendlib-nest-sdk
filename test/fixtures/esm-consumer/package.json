@@ -1,0 +1,5 @@
+{
+  "name": "sendlib-nest-esm-consumer",
+  "private": true,
+  "type": "module"
+}

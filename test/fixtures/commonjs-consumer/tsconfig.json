@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "exactOptionalPropertyTypes": true,
+    "experimentalDecorators": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "strict": true,
+    "target": "ES2022",
+    "types": ["node"]
+  },
+  "include": ["index.ts"]
+}
